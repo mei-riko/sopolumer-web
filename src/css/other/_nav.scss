@@ -1,2 +1,19 @@
 .nav{}
-.navbar{}
+.navbar{
+    display: flex;
+    flex-wrap: nowrap;
+
+    margin-left: -$grid-gutter-width/2;
+    margin-right: -$grid-gutter-width/2;
+
+    .navbar__item{
+        padding: 0 $grid-gutter-width/2;
+        &:hover{
+            text-decoration: $link-decoration;
+        }
+    }
+
+    &_top{
+        text-transform: uppercase;
+    }
+}
