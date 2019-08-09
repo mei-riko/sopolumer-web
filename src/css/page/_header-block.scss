@@ -1,4 +1,18 @@
 .header-block{
     background: #eaeaea;
-    padding: 0 90px;
+    padding: 90px 0;
+
+    &__title{
+        margin-bottom: 70px;
+    }
+    &__content{
+        margin-bottom: 70px;
+
+        .list + .btn-group{
+            margin-top: 40px;
+        } 
+    }
+    &__info{
+        margin-bottom: 0;
+    }
 }

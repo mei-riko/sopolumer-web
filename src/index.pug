@@ -17,15 +17,16 @@ html(lang="ru")
                     h1.header-block__title Комплексные поставки для внутренних инженерных сетей
                     .row.justify-content-end
                         .col-6
-                            ul.list
-                                li.list-item полимерные трубопроводные системы
-                                li.list-item отопительные приборы
-                                li.list-item запорно-регулирующая арматура
-                                li.list-item комплектующие
-                            .btn-group
-                                a.btn.btn__primary(href="#") Задать вопрос менеджеру
-                                a.btn.btn__border(href="#") Скачать прайс-лист
-                            p.text-small.text-grey * менеджер компании поможет вам составить индивидуальную смету
+                            .header-block__content
+                                ul.list
+                                    li.list-item полимерные трубопроводные системы
+                                    li.list-item отопительные приборы
+                                    li.list-item запорно-регулирующая арматура
+                                    li.list-item комплектующие
+                                .btn-group
+                                    a.btn.btn_primary(href="#") Задать вопрос менеджеру
+                                    a.btn.btn_border(href="#") Скачать прайс-лист
+                            p.text-small.text-grey.header-block__info * менеджер компании поможет вам составить индивидуальную смету
         include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
         script(src="./js/app.min.js")

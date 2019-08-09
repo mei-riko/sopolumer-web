@@ -1,1 +1,39 @@
-.btn{}
+.btn{
+    padding: 16px 12px;
+    max-width: 100%;
+    text-decoration: none;
+    
+    font-size: 14px;
+    line-height: 1em;
+
+    border: 4px solid;
+
+    transition: .3s;
+
+    &:hover, &:focus{
+        text-decoration: none;
+    }
+
+    &_primary{
+        color: $white;
+        background: $link-hover-color;
+        border-color: $link-hover-color;
+        &:hover{
+            color: $white;
+            background: $red;
+        }
+    }
+    &_border{
+        color: $link-hover-color;
+        border-color: $link-hover-color;
+        &:hover{
+            border-color: $red;
+        }
+    }
+
+    &-group{
+        .btn + .btn{
+            margin-left: $grid-gutter-width/2;
+        }
+    }
+}
