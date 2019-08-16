@@ -1,0 +1,24 @@
+.sidebar{
+    &__title{
+        @extend .text-bold;
+        @extend .text-uppercase;
+        position: relative;
+        padding-left: 36px;
+        margin-bottom: 1.5rem;
+        .icon{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+    &__nav{
+        padding-left: 36px;
+    }
+    &__link{
+        display: block;
+        & + .sidebar__link{
+            margin-top: 10px;
+        }
+    }
+}

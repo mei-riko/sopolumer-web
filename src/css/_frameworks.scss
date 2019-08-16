@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6,
 }
 * + h1, * + h2, * + h3, * + h4, * + h5, * + h6,
 * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6{
-    margin-top: 2em;
+    margin-top: 1.5rem;
 }
 .h1,h1{font-size: 2.25rem;}
 .h2,h2{font-size: 2rem;}
@@ -59,7 +59,7 @@ a{
 
 .text-uppercase{text-transform: uppercase;}
 .text-bold,strong,b{font-weight: 700;}
-.text-small,small,.small{font-size: 14px; line-height: 18px;}
+.text-small,small,.small{font-size: 12px; line-height: 16px;}
 
 .text-right{text-align: right;}
 .text-center{text-align: center;}
@@ -78,6 +78,32 @@ a{
 .mb-0{margin-bottom: 0px;}
 .mb-40{margin-bottom: 40px;}
 .mb-70{margin-bottom: 70px;}
+
+.breadcrumbs{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+    @extend .text-small;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    .breadcrumbs__item{
+        color: $grey;
+        &_sep{
+            margin: 0 8px;
+        }
+    }
+    .breadcrumbs__link{
+        text-decoration: underline;
+    }
+}
+
+.blockquote, blockquote{
+    padding: 30px;
+    background: $light-grey;
+    border-left: 4px solid $grey;
+}
 
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){}
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){}
