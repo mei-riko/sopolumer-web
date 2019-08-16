@@ -3,6 +3,17 @@
     &.pb-10{
         padding-bottom: 10px;
     }
+    &.pb-0{
+        padding-bottom: 0px;
+    }
+
+    &_bg-grey{
+        background: $light-grey;
+    }
+
+    &__maps{
+        max-width: 100%;
+    }
 
     .content__title{
         margin-bottom: 70px;

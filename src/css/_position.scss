@@ -85,11 +85,11 @@
 //     justify-content: center!important
 // }
 
-// .justify-content-between {
-//     -webkit-box-pack: justify!important;
-//     -ms-flex-pack: justify!important;
-//     justify-content: space-between!important
-// }
+.justify-content-between {
+    -webkit-box-pack: justify!important;
+    -ms-flex-pack: justify!important;
+    justify-content: space-between!important
+}
 
 // .justify-content-around {
 //     -ms-flex-pack: distribute!important;
@@ -108,11 +108,11 @@
 //     align-items: flex-end!important
 // }
 
-// .align-items-center {
-//     -webkit-box-align: center!important;
-//     -ms-flex-align: center!important;
-//     align-items: center!important
-// }
+.align-items-center {
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important
+}
 
 // .align-items-baseline {
 //     -webkit-box-align: baseline!important;

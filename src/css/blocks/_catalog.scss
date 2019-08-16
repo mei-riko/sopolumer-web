@@ -1,0 +1,32 @@
+.catalog{
+    border-bottom: 1px solid #dcdcdc;
+    border-left: 1px solid #dcdcdc;
+    .catalog__col{
+        text-align: center;
+        border-top: 1px solid #dcdcdc;
+        padding: 30px;
+
+        & + .catalog__col{
+            border-right: 1px solid #dcdcdc;
+        }
+
+        &_first{
+            border-right: 1px solid #dcdcdc;
+        }
+        &_link{
+            transition: .4s;
+            &:hover{
+                text-decoration: none;
+                .catalog__title{
+                    text-decoration: none;
+                }
+                // background: $light-grey;
+            }
+        }
+    }
+
+    .catalog__title{
+        margin-bottom: 15px;
+        @extend .small;
+    }
+}

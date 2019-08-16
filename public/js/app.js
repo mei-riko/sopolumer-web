@@ -118,6 +118,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         slidesToShow: 4,
         variableWidth: true
     });
+    // Brand Slider
+    (0, _jquery2.default)('.slider-brand').slick({
+        slidesToShow: 5,
+        centerMode: true,
+        variableWidth: true,
+        prevArrow: '<svg class="slick-prev slick-prev_svg" x="0px" y="0px" viewBox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve"><path fill="#C5C5C5" d="M28.7,2.2c14.4,0,26,11.6,26,26s-11.6,26-26,26s-26-11.6-26-26S14.3,2.2,28.7,2.2z"/><g><polygon fill="#FFF" points="35.2,15.5 33.3,13.5 18.2,28.2 33.3,42.9 35.2,40.9 22.1,28.2 		"/></g></svg>',
+        nextArrow: '<svg class="slick-next slick-next_svg" x="0px" y="0px" viewBox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve"><path fill="#c5c5c5" d="M28.7,54.2c-14.4,0-26-11.6-26-26s11.6-26,26-26s26,11.6,26,26S43.1,54.2,28.7,54.2z"/><g><polygon fill="#FFFFFF" points="22.2,40.9 24.1,42.9 39.2,28.2 24.1,13.5 22.2,15.5 35.3,28.2 		"/></g></svg>'
+    });
 });
 
 /***/ }),

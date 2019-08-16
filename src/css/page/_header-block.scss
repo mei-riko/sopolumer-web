@@ -15,4 +15,11 @@
     &__info{
         margin-bottom: 0;
     }
+    &__img{
+        max-width: 100%;
+        width: 600px;
+        position: absolute;
+        bottom: -90px;
+        left: -20px;
+    }
 }

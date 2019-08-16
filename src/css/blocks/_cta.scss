@@ -1,0 +1,26 @@
+.cta-block{
+    background: $dark-red;
+    color: $white;
+
+    .form{
+        padding: 40px 80px;
+        background: #b20000;
+        .form__input{
+            background: #bd2626;
+            color: $white;
+
+            &::placeholder{
+                color: $white;
+            }
+        }
+        .btn{
+            width: 100%;
+        }
+        .form__agree{
+            color: $light-grey;
+            .checkbox__link{
+                color: $white;
+            }
+        }
+    }
+}
