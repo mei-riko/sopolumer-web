@@ -5,6 +5,8 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Basic Page
 
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
         link(href='./css/style.css', rel='stylesheet')
 
     body
@@ -27,6 +29,65 @@ html(lang="ru")
                                     a.btn.btn_primary(href="#") Задать вопрос менеджеру
                                     a.btn.btn_border(href="#") Скачать прайс-лист
                             p.text-small.text-grey.header-block__info * менеджер компании поможет вам составить индивидуальную смету
+            section.content.pb-10
+                .container
+                    h2.content__title Почему с нами сотрудничают крупнейшие компании?
+                    .row
+                        .col-4
+                            .advantage
+                                p.advantage__title Полная комплектация 
+                                    svg.icon(width="26px" height="26px")
+                                        path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z")
+                                p.advantage__content Большая номенклатурная товарная группа позволяет получить все материалы в одном месте
+                        .col-4
+                            .advantage
+                                p.advantage__title.advantage__title_double Цены от производителя
+                                    svg.icon(width="46px" height="46px")
+                                        path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,33.046 33.046,42.000 22.000,42.000 C10.954,42.000 2.000,33.046 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 Z")
+                                        path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,12.000 C27.523,12.000 32.000,16.477 32.000,22.000 C32.000,27.523 27.523,32.000 22.000,32.000 C16.477,32.000 12.000,27.523 12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z")
+                                p.advantage__content Прямое сотрудничество производителями позволяет предлагать выгодные ценовые условия 
+                        .col-4
+                            .advantage
+                                p.advantage__title Собственная доставка
+                                    svg.icon(width="26px" height="26px")
+                                        path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z")
+                                p.advantage__content Возможность доставки товара собственным транспортом, сокращает время на логистику
+                        .col-4
+                            .advantage
+                                p.advantage__title Инженеры в штате
+                                    svg.icon(width="26px" height="26px")
+                                        path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z")
+                                p.advantage__content Наши технические специалисты помогут в проектировании или подборе оборудования
+                        .col-4
+                            .advantage
+                                p.advantage__title Даем гарантии
+                                    svg.icon(width="26px" height="26px")
+                                        path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z")
+                                p.advantage__content Предоставляем гарантии поставщика, избавляя покупателя от ответственности за качество продукции
+                        .col-4
+                            .advantage
+                                p.advantage__title Поставки от 1 дня
+                                    svg.icon(width="26px" height="26px")
+                                        path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z")
+                                p.advantage__content После оплаты по счету большую часть товара возможно отгрузить на следующий день
+            section
+                .container
+                    .slider-block
+                        .slider-block__title рекомендации и партнерство
+                        .slider-block__content
+                            .slider-item
+                                img.img-fluid(src="/img/test-01.png")
+                            .slider-item
+                                img.img-fluid(src="/img/test-02.png")
+                            .slider-item
+                                img.img-fluid(src="/img/test-03.png")
+                            .slider-item
+                                img.img-fluid(src="/img/test-01.png")
+                            .slider-item
+                                img.img-fluid(src="/img/test-04.png")
+                            .slider-item
+                                img.img-fluid(src="/img/test-02.png")
         include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
+        script(src="./js/slick.min.js")
         script(src="./js/app.min.js")
