@@ -1,0 +1,102 @@
+html(lang="ru")
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Basic Page
+
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        link(href='./css/style.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include chunks/header.pug
+
+        main
+            section.content
+                .container
+                    h1.text-bold.text-uppercase Реализованные проекты
+                    nav.breadcrumbs.mb-40
+                        .breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        .breadcrumbs__item.breadcrumbs__item_sep /
+                        .breadcrumbs__item Проекты
+                    article.post-preview
+                        img.post-preview__img.img-fluid(src="/img/post-1.jpg")
+                        .row.no-gutters
+                            .col-9.post-preview__content
+                                a.post-preview__title.h4.text-bold(href="#") ЖК "Охтинская дуга" СК "Запстрой"
+                                svg.icon(viewBox="0 0 26 26" preserveAspectRatio="xMidYMid")
+                                    path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z")
+                                .post-preview-info.row
+                                    .col-4
+                                        p.mb-0.text-grey.small город
+                                        p.mb-0 г. Санкт-Петербург
+                                    .col-4
+                                        p.mb-0.text-grey.small сроки
+                                        p.mb-0 20.06.2018 — 21.11.2018
+                                    .col-4
+                                        p.mb-0.text-grey.small заказчик
+                                        p.mb-0 ООО «Компания»
+                            a.col-3.post-preview__link(href="text.html") Читать дальше
+                    article.post-preview
+                        img.post-preview__img.img-fluid(src="/img/post-2.jpg")
+                        .row.no-gutters
+                            .col-9.post-preview__content
+                                a.post-preview__title.h4.text-bold(href="#") Завод ИКЕА
+                                svg.icon(viewBox="0 0 26 26" preserveAspectRatio="xMidYMid")
+                                    path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z")
+                                .post-preview-info.row
+                                    .col-4
+                                        p.mb-0.text-grey.small город
+                                        p.mb-0 г. Санкт-Петербург
+                                    .col-4
+                                        p.mb-0.text-grey.small сроки
+                                        p.mb-0 20.06.2018 — 21.11.2018
+                                    .col-4
+                                        p.mb-0.text-grey.small заказчик
+                                        p.mb-0 ООО «Компания»
+                            a.col-3.post-preview__link(href="text.html") Читать дальше
+                    ul.pagination.mt-40
+                        li.pagination__item
+                            a.pagination__link(href="#") 1
+                        li.pagination__item
+                            a.pagination__link.pagination__link--active(href="#") 2
+                        li.pagination__item
+                            a.pagination__link(href="#") 3
+            aside.content.content_bg-grey
+                .container
+                    .slider-brand
+                        .slider-item
+                            img.img-fluid(src="/img/brand-01.png")
+                        .slider-item
+                            img.img-fluid(src="/img/brand-02.png")
+                        .slider-item
+                            img.img-fluid(src="/img/brand-03.png")
+                        .slider-item
+                            img.img-fluid(src="/img/brand-04.png")
+                        .slider-item
+                            img.img-fluid(src="/img/brand-05.png")
+                        .slider-item
+                            img.img-fluid(src="/img/brand-03.png")
+            section.cta-block
+                .container
+                    .row.justify-content-between.align-items-center
+                        .col-6
+                            p.mt-40.h2.text-bold Есть список товаров или нужна помощь профессионалов?
+                            p.mb-40 Укажите контактный телефон и менеджер компании поможет вам составить индивидуальную смету и подобрать все необходимые материалы и технику.
+                        .col-5
+                            form.form(action="#")
+                                input.form__input(placeholder="Ваше имя" type="text")
+                                input.form__input.phone(placeholder="Телефон" type="tel")
+                                a.btn.btn_white(href="#") Отправить
+                                .form__agree.checkbox
+                                    input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
+                                    label.checkbox__label(for="agree") согласен с 
+                                        a.checkbox__link(href="/policy.pdf" target="_blank") обработкой персональных данны
+        include chunks/footer.pug
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/slick.min.js")
+        script(src="./js/app.min.js")

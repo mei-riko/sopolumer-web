@@ -1,7 +1,19 @@
 .catalog{
     border-bottom: 1px solid #dcdcdc;
     border-left: 1px solid #dcdcdc;
+    &_one-line{
+        border-bottom: 0;
+        .catalog__col{
+            border-bottom: 1px solid #dcdcdc;
+        }
+    }
+    
     .catalog__col{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+
         text-align: center;
         border-top: 1px solid #dcdcdc;
         padding: 30px;
@@ -24,9 +36,8 @@
             }
         }
     }
-
     .catalog__title{
         margin-bottom: 15px;
-        @extend .small;
+        line-height: 1.2em;
     }
 }

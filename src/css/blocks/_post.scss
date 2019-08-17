@@ -1,0 +1,37 @@
+.post-preview{
+    .post-preview__content{
+        position: relative;
+
+        padding: 40px 30px;
+        padding-left: 66px;
+
+        border: 1px solid #c5c5c5;
+
+        .icon{
+            width: 26px;
+            height: 26px;
+
+            position: absolute;
+            left: 30px;
+        }
+    }
+    .post-preview__link{
+        border: 1px solid #c5c5c5;
+        border-left: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: .4s;
+
+        &:hover{
+            text-decoration: none;
+            background: $light-grey;
+        }
+    }
+
+    & + .post-preview{
+        margin-top: 40px;
+    }
+}

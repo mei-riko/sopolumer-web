@@ -1,0 +1,147 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Basic Page
+
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        link(href='./css/style.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include chunks/header.pug
+
+        main
+            section.header-block.header-block_catalog
+                .container
+                    h1.text-uppercase.text-bold Каталог продукции
+                    nav.breadcrumbs.mb-40
+                        .breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        .breadcrumbs__item.breadcrumbs__item_sep /
+                        .breadcrumbs__item Каталог
+                    p.mb-40 Мы официальные партнеры представленных ниже производителей и работаем с ними на индивидуальных условиях, позволяющих нам предоставлять привлекательные цены и быстрые сроки поставки.
+                    .slider-brand
+                        .slider-item
+                            img.img-fluid(src="/img/brand-01.png")
+                        .slider-item
+                            img.img-fluid(src="/img/brand-02.png")
+                        .slider-item
+                            img.img-fluid(src="/img/brand-03.png")
+                        .slider-item
+                            img.img-fluid(src="/img/brand-04.png")
+                        .slider-item
+                            img.img-fluid(src="/img/brand-05.png")
+                        .slider-item
+                            img.img-fluid(src="/img/brand-03.png")
+            section.bb-grey.p-sticky
+                .container
+                    .content-navigation
+                        a.content-navigation__item.scroll(href="#type1") Трубы и фитинги
+                        a.content-navigation__item.scroll(href="#type2") Отопительные приборы
+                        a.content-navigation__item.scroll(href="#type3") Запорно-регулирующая арматура
+                        a.content-navigation__item.scroll(href="#type4") Насосы и насосные станции
+                        a.content-navigation__item.scroll(href="#type5") Крепеж и изоляция
+                        a.content-navigation__item.scroll(href="#type6") Сантехника и изделия
+            article.content.pb-0#type1
+                .container
+                    p.h3.content__title.text-bold.mb-40 Трубы и&nbsp;фитинги
+                    nav.row.no-gutters.catalog.catalog_one-line
+                        a.col-3.catalog__col.catalog__col_first.catalog__col_link(href="#")
+                            .catalog__title Трубы и&nbsp;фитинги из&nbsp;полипропилена
+                            img.catalog__image.img-fluid(src="/img/product-1.png")
+                        a.col-3.catalog__col.catalog__col_link(href="#")
+                            .catalog__title Трубы и&nbsp;фитинги из&nbsp;сшитого полипропилена
+                            img.catalog__image.img-fluid(src="/img/product-1.png")
+                        a.col-3.catalog__col.catalog__col_link(href="#")
+                            .catalog__title Металлопластиковые трубы и&nbsp;фитинги
+                            img.catalog__image.img-fluid(src="/img/product-1.png")
+                        a.col-3.catalog__col.catalog__col_link(href="#")
+                            .catalog__title Канализационные трубы
+                            img.catalog__image.img-fluid(src="/img/product-1.png")
+            article.content.pb-0#type2
+                .container
+                    p.h3.content__title.text-bold.mb-40 Отопительные приборы
+                    nav.row.no-gutters.catalog.catalog_one-line
+                        a.col-3.catalog__col.catalog__col_first.catalog__col_link(href="#")
+                            .catalog__title Радиаторы алюминиевые и&nbsp;биметаллические
+                            img.catalog__image.img-fluid(src="/img/product-2.png")
+                        a.col-3.catalog__col.catalog__col_link(href="#")
+                            .catalog__title Стальные панельные радиаторы
+                            img.catalog__image.img-fluid(src="/img/product-2.png")
+                        a.col-3.catalog__col.catalog__col_link(href="#")
+                            .catalog__title Полотенцесушители
+                            img.catalog__image.img-fluid(src="/img/product-2.png")
+                        a.col-3.catalog__col.catalog__col_link(href="#")
+                            .catalog__title Комплектующие
+                            img.catalog__image.img-fluid(src="/img/product-2.png")
+            article.content.pb-0#type3
+                .container
+                    p.h3.content__title.text-bold.mb-40 Запорно-регулирующая арматура
+                    nav.row.no-gutters.catalog.catalog_one-line
+                        a.col-4.catalog__col.catalog__col_first.catalog__col_link(href="#")
+                            .catalog__title Краны запорные
+                            img.catalog__image.img-fluid(src="/img/product-3.png")
+                        a.col-4.catalog__col.catalog__col_link(href="#")
+                            .catalog__title Запорно-регулирующая арматура
+                            img.catalog__image.img-fluid(src="/img/product-3.png")
+                        a.col-4.catalog__col.catalog__col_link(href="#")
+                            .catalog__title Задвижки, затворы, обратные клапаны
+                            img.catalog__image.img-fluid(src="/img/product-3.png")
+            article.content.pb-0#type4
+                .container
+                    p.h3.content__title.text-bold.mb-40 Насосы и насосные станции
+                    nav.row.no-gutters.catalog.catalog_one-line
+                        a.col-4.catalog__col.catalog__col_first.catalog__col_link(href="#")
+                            .catalog__title Станции повышения давления
+                            img.catalog__image.img-fluid(src="/img/product-6.png")
+                        a.col-4.catalog__col.catalog__col_link(href="#")
+                            .catalog__title Водоотведение
+                            img.catalog__image.img-fluid(src="/img/product-6.png")
+                        a.col-4.catalog__col.catalog__col_link(href="#")
+                            .catalog__title Пожарные станции
+                            img.catalog__image.img-fluid(src="/img/product-6.png")
+            article.content.pb-0#type5
+                .container
+                    p.h3.content__title.text-bold.mb-40 Крепеж & Изоляционные материалы
+                    nav.row.no-gutters.catalog.catalog_one-line
+                        a.col-3.catalog__col.catalog__col_first.catalog__col_link(href="#")
+                            .catalog__title Уплотнительные материалы
+                            img.catalog__image.img-fluid(src="/img/product-5.png")
+                        a.col-3.catalog__col.catalog__col_link(href="#")
+                            .catalog__title Крепежные изделия
+                            img.catalog__image.img-fluid(src="/img/product-5.png")
+                        a.col-3.catalog__col.catalog__col_link(href="#")
+                            .catalog__title Трубная изоляция
+                            img.catalog__image.img-fluid(src="/img/product-7.png")
+                        a.col-3.catalog__col.catalog__col_link(href="#")
+                            .catalog__title Цилиндры из&nbsp;минеральной ваты
+                            img.catalog__image.img-fluid(src="/img/product-7.png")
+            article.content#type6
+                .container
+                    p.h3.content__title.text-bold.mb-40 Сантехника и изделия
+                    nav.row.no-gutters.catalog.catalog_one-line
+                        a.col-4.catalog__col.catalog__col_first.catalog__col_link(href="#")
+                            .catalog__title Уплотнительные материалы
+                            img.catalog__image.img-fluid(src="/img/product-4.png")
+            section.cta-block
+                .container
+                    .row.justify-content-between.align-items-center
+                        .col-6
+                            p.mt-40.h2.text-bold Есть список товаров или нужна помощь профессионалов?
+                            p.mb-40 Укажите контактный телефон и менеджер компании поможет вам составить индивидуальную смету и подобрать все необходимые материалы и технику.
+                        .col-5
+                            form.form(action="#")
+                                input.form__input(placeholder="Ваше имя" type="text")
+                                input.form__input.phone(placeholder="Телефон" type="tel")
+                                a.btn.btn_white(href="#") Отправить
+                                .form__agree.checkbox
+                                    input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
+                                    label.checkbox__label(for="agree") согласен с 
+                                        a.checkbox__link(href="/policy.pdf" target="_blank") обработкой персональных данных
+        include chunks/footer.pug
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/slick.min.js")
+        script(src="./js/app.min.js")

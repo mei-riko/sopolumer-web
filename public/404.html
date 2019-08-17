@@ -1,0 +1,104 @@
+
+<html lang="ru"></html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Basic Page</title>
+    <link href="./css/slick.css" rel="stylesheet"/>
+    <link href="./css/slick-theme.css" rel="stylesheet"/>
+    <link href="./css/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__row"><a class="header__logo" href="/"></a>
+            <nav class="navbar navbar_top"><a class="navbar__item" href="#">рекомендации</a><a class="navbar__item" href="#">техподдержка</a><a class="navbar__item" href="#">контакты</a><a class="navbar__item" href="#">обратная связь</a></nav>
+            <ul class="contact">
+              <li class="contact__item">Санкт-Петербург</li>
+              <li class="contact__item"><a class="contact__link" href="tel:#">8 800 800 00 00</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__row">
+            <nav class="navbar"><a class="navbar__item" href="#">О компании</a><a class="navbar__item" href="#">Каталог продукции</a><a class="navbar__item" href="#">Реализованные проекты</a><a class="navbar__item" href="#">Партнерам</a></nav>
+            <div class="search-icon" id="headerSearch"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="header-block header-block_error">
+        <div class="container">
+          <h1 class="header-block__title">Ошибка 404</h1>
+          <p class="header-block__info">A diam maecenas sed enim. Commodo quis imperdiet massa tincidunt nunc. Ipsum a arcu cursus vitae congue. Facilisi etiam dignissim diam quis enim. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam.</p>
+        </div>
+      </section>
+      <aside class="content pb-0">
+        <div class="container">
+          <p class="h2 content__title text-bold">Каталог продукции</p>
+          <nav class="row no-gutters catalog"><a class="col-3 catalog__col catalog__col_first catalog__col_link" href="/catalog.html">
+              <div class="catalog__title">Трубы и&nbsp;фитинги</div><img class="catalog__image img-fluid" src="/img/product-1.png"/></a><a class="col-3 catalog__col catalog__col_link" href="/catalog.html">
+              <div class="catalog__title">Отопительные приборы</div><img class="catalog__image img-fluid" src="/img/product-2.png"/></a><a class="col-3 catalog__col catalog__col_link" href="/catalog.html">
+              <div class="catalog__title">Крепежи</div><img class="catalog__image img-fluid" src="/img/product-5.png"/></a><a class="col-3 catalog__col catalog__col_link" href="/catalog.html">
+              <div class="catalog__title">Санитарная техника и&nbsp;изделия</div><img class="catalog__image img-fluid" src="/img/product-4.png"/></a><a class="col-4 catalog__col catalog__col_link" href="/catalog.html">
+              <div class="catalog__title">Запорно-регулирующая арматура </div><img class="catalog__image img-fluid" src="/img/product-3.png"/></a><a class="col-4 catalog__col catalog__col_link" href="/catalog.html">
+              <div class="catalog__title">Насосы и&nbsp;насосные станции</div><img class="catalog__image img-fluid" src="/img/product-6.png"/></a><a class="col-4 catalog__col catalog__col_link" href="/catalog.html">
+              <div class="catalog__title">Изоляционные материалы</div><img class="catalog__image img-fluid" src="/img/product-7.png"/></a></nav>
+        </div>
+      </aside>
+      <aside class="content">
+        <div class="container">
+          <div class="slider-brand">
+            <div class="slider-item"><img class="img-fluid" src="/img/brand-01.png"/></div>
+            <div class="slider-item"><img class="img-fluid" src="/img/brand-02.png"/></div>
+            <div class="slider-item"><img class="img-fluid" src="/img/brand-03.png"/></div>
+            <div class="slider-item"><img class="img-fluid" src="/img/brand-04.png"/></div>
+            <div class="slider-item"><img class="img-fluid" src="/img/brand-05.png"/></div>
+            <div class="slider-item"><img class="img-fluid" src="/img/brand-03.png"/></div>
+          </div>
+        </div>
+      </aside>
+      <section class="cta-block">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-6">
+              <p class="mt-40 h2 text-bold">Есть список товаров или нужна помощь профессионалов?</p>
+              <p class="mb-40">Укажите контактный телефон и менеджер компании поможет вам составить индивидуальную смету и подобрать все необходимые материалы и технику.</p>
+            </div>
+            <div class="col-5">
+              <form class="form" action="#">
+                <input class="form__input" placeholder="Ваше имя" type="text"/>
+                <input class="form__input phone" placeholder="Телефон" type="tel"/><a class="btn btn_white" href="#">Отправить</a>
+                <div class="form__agree checkbox">
+                  <input class="checkbox__input" id="agree" type="checkbox" name="agree" checked="checked" required="required"/>
+                  <label class="checkbox__label" for="agree">согласен с <a class="checkbox__link" href="/policy.pdf" target="_blank">обработкой персональных данны</a></label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row"><a class="footer__logo" href="/"></a>
+          <nav class="navbar"><a class="navbar__item" href="#">О компании</a><a class="navbar__item" href="#">Каталог</a><a class="navbar__item" href="#">Проекты</a><a class="navbar__item" href="#">Партнерам</a><a class="navbar__item" href="#">Контакты</a></nav>
+          <ul class="contact">
+            <li class="contact__item">Санкт-Петербург</li>
+            <li class="contact__item"><a class="contact__link" href="tel:#">8 800 800 00 00</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.inputmask.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/app.min.js"></script>
+  </body>
+</html>

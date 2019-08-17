@@ -22,4 +22,23 @@
         bottom: -90px;
         left: -20px;
     }
+
+    /* For error page */
+    &_error{
+        background: $dark-red url('/img/404.jpg') no-repeat center / cover;
+        color: $white;
+
+        .header-block__title{
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        .header-block__info{
+            width: 550px;
+            max-width: 100%;
+        }
+    }
+    /* For catalog */
+    &_catalog{
+        padding: 70px 0;
+    }
 }

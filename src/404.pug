@@ -1,0 +1,80 @@
+html(lang="ru")
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Basic Page
+
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        link(href='./css/style.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include chunks/header.pug
+
+        main
+            section.header-block.header-block_error
+                .container
+                    h1.header-block__title Ошибка 404
+                    p.header-block__info A diam maecenas sed enim. Commodo quis imperdiet massa tincidunt nunc. Ipsum a arcu cursus vitae congue. Facilisi etiam dignissim diam quis enim. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam.
+            aside.content.pb-0
+                .container
+                    p.h2.content__title.text-bold Каталог продукции
+                    nav.row.no-gutters.catalog
+                        a.col-3.catalog__col.catalog__col_first.catalog__col_link(href="/catalog.html")
+                            .catalog__title Трубы и&nbsp;фитинги
+                            img.catalog__image.img-fluid(src="/img/product-1.png")
+                        a.col-3.catalog__col.catalog__col_link(href="/catalog.html")
+                            .catalog__title Отопительные приборы
+                            img.catalog__image.img-fluid(src="/img/product-2.png")
+                        a.col-3.catalog__col.catalog__col_link(href="/catalog.html")
+                            .catalog__title Крепежи
+                            img.catalog__image.img-fluid(src="/img/product-5.png")
+                        a.col-3.catalog__col.catalog__col_link(href="/catalog.html")
+                            .catalog__title Санитарная техника и&nbsp;изделия
+                            img.catalog__image.img-fluid(src="/img/product-4.png")
+                        a.col-4.catalog__col.catalog__col_link(href="/catalog.html")
+                            .catalog__title Запорно-регулирующая арматура 
+                            img.catalog__image.img-fluid(src="/img/product-3.png")
+                        a.col-4.catalog__col.catalog__col_link(href="/catalog.html")
+                            .catalog__title Насосы и&nbsp;насосные станции
+                            img.catalog__image.img-fluid(src="/img/product-6.png")
+                        a.col-4.catalog__col.catalog__col_link(href="/catalog.html")
+                            .catalog__title Изоляционные материалы
+                            img.catalog__image.img-fluid(src="/img/product-7.png")
+            aside.content
+                .container
+                    .slider-brand
+                        .slider-item
+                            img.img-fluid(src="/img/brand-01.png")
+                        .slider-item
+                            img.img-fluid(src="/img/brand-02.png")
+                        .slider-item
+                            img.img-fluid(src="/img/brand-03.png")
+                        .slider-item
+                            img.img-fluid(src="/img/brand-04.png")
+                        .slider-item
+                            img.img-fluid(src="/img/brand-05.png")
+                        .slider-item
+                            img.img-fluid(src="/img/brand-03.png")
+            section.cta-block
+                .container
+                    .row.justify-content-between.align-items-center
+                        .col-6
+                            p.mt-40.h2.text-bold Есть список товаров или нужна помощь профессионалов?
+                            p.mb-40 Укажите контактный телефон и менеджер компании поможет вам составить индивидуальную смету и подобрать все необходимые материалы и технику.
+                        .col-5
+                            form.form(action="#")
+                                input.form__input(placeholder="Ваше имя" type="text")
+                                input.form__input.phone(placeholder="Телефон" type="tel")
+                                a.btn.btn_white(href="#") Отправить
+                                .form__agree.checkbox
+                                    input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
+                                    label.checkbox__label(for="agree") согласен с 
+                                        a.checkbox__link(href="/policy.pdf" target="_blank") обработкой персональных данны
+        include chunks/footer.pug
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/slick.min.js")
+        script(src="./js/app.min.js")

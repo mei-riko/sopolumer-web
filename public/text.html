@@ -36,13 +36,13 @@
       <div class="content">
         <div class="container">
           <div class="row">
-            <article class="col-8 post">
+            <section class="col-8 post">
               <h1 class="text-uppercase">Простая текстовая страница</h1>
-              <div class="breadcrumbs">
+              <nav class="breadcrumbs mb-40">
                 <div class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></div>
                 <div class="breadcrumbs__item breadcrumbs__item_sep">/</div>
                 <div class="breadcrumbs__item">Простая текстовая страница</div>
-              </div>
+              </nav>
               <p>A diam maecenas sed enim. Commodo quis imperdiet massa tincidunt nunc. Ipsum a arcu cursus vitae congue. Facilisi etiam dignissim diam quis enim. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam.</p>
               <h2 class="text-bold">Заголовок h2</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac feugiat sed lectus vestibulum. Euismod quis viverra nibh cras pulvinar mattis nunc sed. Sed elementum tempus egestas sed sed risus pretium quam. Fames ac turpis egestas sed tempus urna et pharetra pharetra. Maecenas pharetra convallis posuere morbi leo urna molestie at elementum. </p>
@@ -61,46 +61,81 @@
                 <li>Auctor augue mauris augue neque gravida</li>
                 <li>Auctor augue mauris augue neque gravida</li>
               </ul>
-            </article>
+            </section>
             <aside class="col-4 sidebar">
-              <p class="sidebar__title">Каталог продукции
-                <svg class="icon" width="26px" height="26px">
-                  <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z"></path>
-                </svg>
-              </p>
-              <nav class="sidebar__nav mb-40"><a class="sidebar__link" href="#">Трубы и фитинги</a><a class="sidebar__link" href="#">Отопительные приборы</a><a class="sidebar__link" href="#">Крепежи</a><a class="sidebar__link" href="#">Санитарная техника и&nbsp;изделия</a><a class="sidebar__link" href="#">Запорно-регулирующая арматура</a><a class="sidebar__link" href="#">Насосы и насосные станции</a><a class="sidebar__link" href="#">Изоляционные материалы</a></nav>
-              <p class="sidebar__title">Актуальные новости
-                <svg class="icon" width="26px" height="26px">
-                  <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z">                           </path>
-                </svg>
-              </p><a class="row news-preview" href="#">
-                <div class="col-4"><img class="img-fluid" src="/img/news-1.png"/></div>
-                <div class="col-8">
-                  <p class="text-bold news-preview__title">ЖК "Охтинская дуга" СК "Запстрой"</p>
-                  <p class="text-grey">
-                    Заказчик: 1234 <br/>Город: Москва <br/>
-                    Поставка: инженерные сети <br/>
-                    Дата окончания: 14 июля
-                  </p>
-                </div></a><a class="row news-preview" href="#">
-                <div class="col-4"><img class="img-fluid" src="/img/news-2.png"/></div>
-                <div class="col-8">
-                  <p class="text-bold news-preview__title">Завод ИКЕА</p>
-                  <p class="text-grey">
-                    Заказчик: 1234 <br/>Город: Москва <br/>
-                    Поставка: инженерные сети <br/>
-                    Дата окончания: 14 июля
-                  </p>
-                </div></a><a class="row news-preview" href="#">
-                <div class="col-4"><img class="img-fluid" src="/img/news-3.png"/></div>
-                <div class="col-8">
-                  <p class="text-bold news-preview__title">Дилерские центры Honda и Toyota г. Брянск</p>
-                  <p class="text-grey">
-                    Заказчик: 1234 <br/>Город: Москва <br/>
-                    Поставка: инженерные сети <br/>
-                    Дата окончания: 14 июля
-                  </p>
-                </div></a>
+              <div class="sidebar__block sidebar__block_border pb-40">
+                <p class="sidebar__title">Каталог продукции
+                  <svg class="icon" viewBox="0 0 26 26" preserveAspectRatio="xMidYMid">
+                    <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z"></path>
+                  </svg>
+                </p>
+                <nav class="sidebar__nav"><a class="sidebar__link" href="#">Трубы и фитинги
+                    <svg class="icon" viewBox="0 0 46 46" preserveAspectRatio="xMidYMid">
+                      <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,33.046 33.046,42.000 22.000,42.000 C10.954,42.000 2.000,33.046 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 Z"></path>
+                      <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,12.000 C27.523,12.000 32.000,16.477 32.000,22.000 C32.000,27.523 27.523,32.000 22.000,32.000 C16.477,32.000 12.000,27.523 12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z"></path>
+                    </svg></a><a class="sidebar__link" href="#">Отопительные приборы
+                    <svg class="icon" viewBox="0 0 46 46" preserveAspectRatio="xMidYMid">
+                      <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,33.046 33.046,42.000 22.000,42.000 C10.954,42.000 2.000,33.046 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 Z"></path>
+                      <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,12.000 C27.523,12.000 32.000,16.477 32.000,22.000 C32.000,27.523 27.523,32.000 22.000,32.000 C16.477,32.000 12.000,27.523 12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z"></path>
+                    </svg></a><a class="sidebar__link" href="#">Крепежи
+                    <svg class="icon" viewBox="0 0 46 46" preserveAspectRatio="xMidYMid">
+                      <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,33.046 33.046,42.000 22.000,42.000 C10.954,42.000 2.000,33.046 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 Z"></path>
+                      <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,12.000 C27.523,12.000 32.000,16.477 32.000,22.000 C32.000,27.523 27.523,32.000 22.000,32.000 C16.477,32.000 12.000,27.523 12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z"></path>
+                    </svg></a><a class="sidebar__link" href="#">Санитарная техника и&nbsp;изделия
+                    <svg class="icon" viewBox="0 0 46 46" preserveAspectRatio="xMidYMid">
+                      <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,33.046 33.046,42.000 22.000,42.000 C10.954,42.000 2.000,33.046 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 Z"></path>
+                      <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,12.000 C27.523,12.000 32.000,16.477 32.000,22.000 C32.000,27.523 27.523,32.000 22.000,32.000 C16.477,32.000 12.000,27.523 12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z"></path>
+                    </svg></a><a class="sidebar__link" href="#">Запорно-регулирующая арматура
+                    <svg class="icon" viewBox="0 0 46 46" preserveAspectRatio="xMidYMid">
+                      <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,33.046 33.046,42.000 22.000,42.000 C10.954,42.000 2.000,33.046 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 Z"></path>
+                      <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,12.000 C27.523,12.000 32.000,16.477 32.000,22.000 C32.000,27.523 27.523,32.000 22.000,32.000 C16.477,32.000 12.000,27.523 12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z"></path>
+                    </svg></a><a class="sidebar__link" href="#">Насосы и насосные станции
+                    <svg class="icon" viewBox="0 0 46 46" preserveAspectRatio="xMidYMid">
+                      <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,33.046 33.046,42.000 22.000,42.000 C10.954,42.000 2.000,33.046 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 Z"></path>
+                      <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,12.000 C27.523,12.000 32.000,16.477 32.000,22.000 C32.000,27.523 27.523,32.000 22.000,32.000 C16.477,32.000 12.000,27.523 12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z"></path>
+                    </svg></a><a class="sidebar__link" href="#">Изоляционные материалы
+                    <svg class="icon" viewBox="0 0 46 46" preserveAspectRatio="xMidYMid">
+                      <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,33.046 33.046,42.000 22.000,42.000 C10.954,42.000 2.000,33.046 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 Z"></path>
+                      <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,12.000 C27.523,12.000 32.000,16.477 32.000,22.000 C32.000,27.523 27.523,32.000 22.000,32.000 C16.477,32.000 12.000,27.523 12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z"></path>
+                    </svg></a></nav>
+              </div>
+              <div class="sidebar__block">
+                <p class="sidebar__title">Актуальные новости
+                  <svg class="icon" viewBox="0 0 26 26" preserveAspectRatio="xMidYMid">
+                    <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z">                           </path>
+                  </svg>
+                </p>
+                <article><a class="row news-preview" href="#">
+                    <div class="col-4"><img class="img-fluid" src="/img/news-1.png"/></div>
+                    <div class="col-8">
+                      <p class="text-bold news-preview__title">ЖК "Охтинская дуга" СК "Запстрой"</p>
+                      <p class="text-grey">
+                        Заказчик: 1234 <br/>Город: Москва <br/>
+                        Поставка: инженерные сети <br/>
+                        Дата окончания: 14 июля
+                      </p>
+                    </div></a></article>
+                <article><a class="row news-preview" href="#">
+                    <div class="col-4"><img class="img-fluid" src="/img/news-2.png"/></div>
+                    <div class="col-8">
+                      <p class="text-bold news-preview__title">Завод ИКЕА</p>
+                      <p class="text-grey">
+                        Заказчик: 1234 <br/>Город: Москва <br/>
+                        Поставка: инженерные сети <br/>
+                        Дата окончания: 14 июля
+                      </p>
+                    </div></a></article>
+                <artile><a class="row news-preview" href="#">
+                    <div class="col-4"><img class="img-fluid" src="/img/news-3.png"/></div>
+                    <div class="col-8">
+                      <p class="text-bold news-preview__title">Дилерские центры Honda и Toyota г. Брянск</p>
+                      <p class="text-grey">
+                        Заказчик: 1234 <br/>Город: Москва <br/>
+                        Поставка: инженерные сети <br/>
+                        Дата окончания: 14 июля
+                      </p>
+                    </div></a></artile>
+              </div>
             </aside>
           </div>
         </div>

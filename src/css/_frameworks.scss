@@ -52,6 +52,7 @@ a{
 }
 
 .p-relative{position: relative;}
+.p-sticky{position: sticky; top: 0; left: 0; z-index: 101; background: $white;}
 
 .text-white{color: $white;}
 .text-black{color: $black;}
@@ -72,17 +73,10 @@ a{
     max-width: 100%;
 }
 
-.mt-0{margin-top: 0px;}
-.mt-40{margin-top: 40px;}
-.mt-70{margin-top: 70px;}
-.mb-0{margin-bottom: 0px;}
-.mb-40{margin-bottom: 40px;}
-.mb-70{margin-bottom: 70px;}
-
 .breadcrumbs{
     list-style: none;
     padding: 0;
-    margin: 0 0 2rem;
+    margin: 0 0 40px;
     @extend .text-small;
 
     display: flex;
@@ -98,12 +92,58 @@ a{
         text-decoration: underline;
     }
 }
+.pagination{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    .pagination__item{
+        margin-right: 10px;
+    }
+    .pagination__link{
+        border: 1px solid $dark-grey;
+
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+
+        text-align: center;
+
+        transition: .4s;
+
+        &--active{
+            border: 2px solid $red;
+            color: $red;
+            font-weight: 700;
+
+        }
+
+        &:hover{
+            text-decoration: none;
+            background: $light-grey;
+        }
+    }
+}
 
 .blockquote, blockquote{
     padding: 30px;
     background: $light-grey;
     border-left: 4px solid $grey;
 }
+
+.mt-0{margin-top: 0px;}
+.mt-40{margin-top: 40px;}
+.mt-70{margin-top: 70px;}
+.mb-0{margin-bottom: 0px;}
+.mb-40{margin-bottom: 40px;}
+.mb-70{margin-bottom: 70px;}
+
+.pb-0{padding-bottom: 0px;}
+.pb-40{padding-bottom: 40px;}
+.pb-70{padding-bottom: 70px;}
 
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){}
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){}
