@@ -14,117 +14,87 @@ html(lang="ru")
         include chunks/header.pug
 
         main
-            .content
+            section.content
                 .container
+                    h1.text-uppercase ЖК "Охтинская дуга" СК "Запстрой"
+                    nav.breadcrumbs.mb-40
+                        .breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        .breadcrumbs__item.breadcrumbs__item_sep /
+                        .breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Портфолио
+                        .breadcrumbs__item.breadcrumbs__item_sep /
+                        .breadcrumbs__item ЖК "Охтинская дуга" СК "Запстрой"
                     .row
-                        section.col-8.post
-                            h1.text-uppercase Простая текстовая страница
-                            nav.breadcrumbs.mb-40
-                                .breadcrumbs__item
-                                    a.breadcrumbs__link(href="#") Главная
-                                .breadcrumbs__item.breadcrumbs__item_sep /
-                                .breadcrumbs__item Простая текстовая страница
-                            p A diam maecenas sed enim. Commodo quis imperdiet massa tincidunt nunc. Ipsum a arcu cursus vitae congue. Facilisi etiam dignissim diam quis enim. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam.
-                            h2.text-bold Заголовок h2
+                        .col-7
+                            .slider-for
+                                .slider-item
+                                    img.img-fluid(src="/img/post-inside.png")
+                                .slider-item
+                                    img.img-fluid(src="/img/post-inside.png")
+                                .slider-item
+                                    img.img-fluid(src="/img/post-inside.png")
+                                .slider-item
+                                    img.img-fluid(src="/img/post-inside.png")
+                                .slider-item
+                                    img.img-fluid(src="/img/post-inside.png")
+                            .slider-nav
+                                .slider-item
+                                    img.img-fluid(src="/img/post-inside.png")
+                                .slider-item
+                                    img.img-fluid(src="/img/post-inside.png")
+                                .slider-item
+                                    img.img-fluid(src="/img/post-inside.png")
+                                .slider-item
+                                    img.img-fluid(src="/img/post-inside.png")
+                                .slider-item
+                                    img.img-fluid(src="/img/post-inside.png")
+                        .col-5
+                            p.text-small.text-grey.mb-0 заказчик
+                            p ООО Компания
+                            p.text-small.text-grey.mb-0 город
+                            p г. Санкт-Петербург
+                            p.text-small.text-grey.mb-0 сроки
+                            p 20.06.2018 — 21.11.2018
+                            p.text-small.text-grey.mb-0 поставка
                             p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac feugiat sed lectus vestibulum. Euismod quis viverra nibh cras pulvinar mattis nunc sed. Sed elementum tempus egestas sed sed risus pretium quam. Fames ac turpis egestas sed tempus urna et pharetra pharetra. Maecenas pharetra convallis posuere morbi leo urna molestie at elementum. 
-                            h3.text-bold Заголовок h3
-                            p A diam maecenas sed enim. Commodo quis imperdiet massa tincidunt nunc. Ipsum a arcu cursus vitae congue. Facilisi etiam dignissim diam quis enim. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. 
-                            blockquote Enim diam vulputate ut pharetra sit amet aliquam. Lectus magna fringilla urna porttitor	rhoncus dolor purus non enim. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae.	Fusce id velit ut tortor pretium. Urna neque viverra justo nec ultrices dui sapien eget. 
-                            h4.text-bold Заголовок h4
-                            p Auctor augue mauris augue neque gravida. Aliquam vestibulum morbi blandit cursus risus. Leo in vitae turpis massa sed elementum tempus egestas. Magna etiam tempor orci eu lobortis elementum nibh.
-                            h5.text-bold Заголовок h5
-                            p Auctor augue mauris augue neque gravida. Aliquam vestibulum morbi blandit cursus risus. Leo in vitae turpis massa sed elementum tempus egestas. Magna etiam tempor orci eu lobortis elementum nibh.
-                            h6.text-bold Заголовок h6
-                            p Auctor augue mauris augue neque gravida. Aliquam vestibulum morbi blandit cursus risus. Leo in vitae turpis massa sed elementum tempus egestas. Magna etiam tempor orci eu lobortis elementum nibh.
-                            ul
-                                li Auctor augue mauris augue neque gravida
-                                li Auctor augue mauris augue neque gravida
-                                li Auctor augue mauris augue neque gravida
-                                li Auctor augue mauris augue neque gravida
-                        aside.col-4.sidebar
-                            .sidebar__block.sidebar__block_border.pb-40
-                                p.sidebar__title Каталог продукции
-                                    svg.icon(viewBox="0 0 26 26" preserveAspectRatio="xMidYMid")
-                                        path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z")
-                                nav.sidebar__nav
-                                    a.sidebar__link(href="#") Трубы и фитинги
-                                        svg.icon(viewBox="0 0 46 46" preserveAspectRatio="xMidYMid")
-                                            path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,33.046 33.046,42.000 22.000,42.000 C10.954,42.000 2.000,33.046 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 Z")
-                                            path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,12.000 C27.523,12.000 32.000,16.477 32.000,22.000 C32.000,27.523 27.523,32.000 22.000,32.000 C16.477,32.000 12.000,27.523 12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z")
-                                    a.sidebar__link(href="#") Отопительные приборы
-                                        svg.icon(viewBox="0 0 46 46" preserveAspectRatio="xMidYMid")
-                                            path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,33.046 33.046,42.000 22.000,42.000 C10.954,42.000 2.000,33.046 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 Z")
-                                            path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,12.000 C27.523,12.000 32.000,16.477 32.000,22.000 C32.000,27.523 27.523,32.000 22.000,32.000 C16.477,32.000 12.000,27.523 12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z")
-                                    a.sidebar__link(href="#") Крепежи
-                                        svg.icon(viewBox="0 0 46 46" preserveAspectRatio="xMidYMid")
-                                            path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,33.046 33.046,42.000 22.000,42.000 C10.954,42.000 2.000,33.046 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 Z")
-                                            path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,12.000 C27.523,12.000 32.000,16.477 32.000,22.000 C32.000,27.523 27.523,32.000 22.000,32.000 C16.477,32.000 12.000,27.523 12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z")
-                                    a.sidebar__link(href="#") Санитарная техника и&nbsp;изделия
-                                        svg.icon(viewBox="0 0 46 46" preserveAspectRatio="xMidYMid")
-                                            path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,33.046 33.046,42.000 22.000,42.000 C10.954,42.000 2.000,33.046 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 Z")
-                                            path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,12.000 C27.523,12.000 32.000,16.477 32.000,22.000 C32.000,27.523 27.523,32.000 22.000,32.000 C16.477,32.000 12.000,27.523 12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z")
-                                    a.sidebar__link(href="#") Запорно-регулирующая арматура
-                                        svg.icon(viewBox="0 0 46 46" preserveAspectRatio="xMidYMid")
-                                            path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,33.046 33.046,42.000 22.000,42.000 C10.954,42.000 2.000,33.046 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 Z")
-                                            path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,12.000 C27.523,12.000 32.000,16.477 32.000,22.000 C32.000,27.523 27.523,32.000 22.000,32.000 C16.477,32.000 12.000,27.523 12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z")
-                                    a.sidebar__link(href="#") Насосы и насосные станции
-                                        svg.icon(viewBox="0 0 46 46" preserveAspectRatio="xMidYMid")
-                                            path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,33.046 33.046,42.000 22.000,42.000 C10.954,42.000 2.000,33.046 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 Z")
-                                            path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,12.000 C27.523,12.000 32.000,16.477 32.000,22.000 C32.000,27.523 27.523,32.000 22.000,32.000 C16.477,32.000 12.000,27.523 12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z")
-                                    a.sidebar__link(href="#") Изоляционные материалы
-                                        svg.icon(viewBox="0 0 46 46" preserveAspectRatio="xMidYMid")
-                                            path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,33.046 33.046,42.000 22.000,42.000 C10.954,42.000 2.000,33.046 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 Z")
-                                            path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,12.000 C27.523,12.000 32.000,16.477 32.000,22.000 C32.000,27.523 27.523,32.000 22.000,32.000 C16.477,32.000 12.000,27.523 12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z")
-                            .sidebar__block
-                                p.sidebar__title Актуальные новости
-                                    svg.icon(viewBox="0 0 26 26" preserveAspectRatio="xMidYMid")
-                                        path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z")                            
-                                article
-                                    a.row.news-preview(href="#")
-                                        .col-4
-                                            img.img-fluid(src="/img/news-1.png")
-                                        .col-8
-                                            p.text-bold.news-preview__title ЖК "Охтинская дуга" СК "Запстрой"
-                                            p.text-grey Заказчик: 1234 <br/>
-                                                | Город: Москва <br/>
-                                                | Поставка: инженерные сети <br/>
-                                                | Дата окончания: 14 июля
-                                article
-                                    a.row.news-preview(href="#")
-                                        .col-4
-                                            img.img-fluid(src="/img/news-2.png")
-                                        .col-8
-                                            p.text-bold.news-preview__title Завод ИКЕА
-                                            p.text-grey Заказчик: 1234 <br/>
-                                                | Город: Москва <br/>
-                                                | Поставка: инженерные сети <br/>
-                                                | Дата окончания: 14 июля
-                                artile
-                                    a.row.news-preview(href="#")
-                                        .col-4
-                                            img.img-fluid(src="/img/news-3.png")
-                                        .col-8
-                                            p.text-bold.news-preview__title Дилерские центры Honda и Toyota г. Брянск
-                                            p.text-grey Заказчик: 1234 <br/>
-                                                | Город: Москва <br/>
-                                                | Поставка: инженерные сети <br/>
-                                                | Дата окончания: 14 июля
+                            .btn-group.mt-70
+                                    a.btn.btn_border-red(href="#") ЖК Название
+                                    a.btn.btn_border-red(href="#") Завод IKEA
             aside.content.content_bg-grey
                 .container
-                    p.text-bold Производители представленные в нашем каталоге:
-                    .slider-brand
-                        .slider-item
-                            img.img-fluid(src="/img/brand-01.png")
-                        .slider-item
-                            img.img-fluid(src="/img/brand-02.png")
-                        .slider-item
-                            img.img-fluid(src="/img/brand-03.png")
-                        .slider-item
-                            img.img-fluid(src="/img/brand-04.png")
-                        .slider-item
-                            img.img-fluid(src="/img/brand-05.png")
-                        .slider-item
-                            img.img-fluid(src="/img/brand-03.png")
+                    h4.text-bold.mb-40 Актуальные новости
+                    .row
+                        article.col-4
+                            a.row.news-preview(href="#")
+                                .col-4
+                                    img.img-fluid(src="/img/news-1.png")
+                                .col-8
+                                    p.text-bold.news-preview__title ЖК "Охтинская дуга" СК "Запстрой"
+                                    p.text-grey.mb-0 Заказчик: 1234 <br/>
+                                        | Город: Москва <br/>
+                                        | Поставка: инженерные сети <br/>
+                                        | Дата окончания: 14 июля
+                        article.col-4
+                            a.row.news-preview(href="#")
+                                .col-4
+                                    img.img-fluid(src="/img/news-2.png")
+                                .col-8
+                                    p.text-bold.news-preview__title Завод ИКЕА
+                                    p.text-grey.mb-0 Заказчик: 1234 <br/>
+                                        | Город: Москва <br/>
+                                        | Поставка: инженерные сети <br/>
+                                        | Дата окончания: 14 июля
+                        artile.col-4
+                            a.row.news-preview(href="#")
+                                .col-4
+                                    img.img-fluid(src="/img/news-3.png")
+                                .col-8
+                                    p.text-bold.news-preview__title Дилерские центры Honda и Toyota г. Брянск
+                                    p.text-grey.mb-0 Заказчик: 1234 <br/>
+                                        | Город: Москва <br/>
+                                        | Поставка: инженерные сети <br/>
+                                        | Дата окончания: 14 июля
             aside.cta-block
                 .container
                     .row.justify-content-between.align-items-center
