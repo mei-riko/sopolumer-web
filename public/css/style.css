@@ -1595,11 +1595,27 @@ a:hover, a:focus {
   border: 1px solid #c5c5c5;
 }
 
-.post-preview .post-preview__content .icon {
+.post-preview .post-preview__img + .post-preview__title {
+  margin-top: 20px;
+}
+
+.post-preview .post-preview__title {
+  position: relative;
+}
+
+.post-preview .post-preview__title .icon {
   width: 26px;
   height: 26px;
   position: absolute;
-  left: 30px;
+  top: 50%;
+  left: -36px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.post-preview .post-preview__title + .post-preview__introtext {
+  margin-top: 10px;
 }
 
 .post-preview .post-preview__link {
@@ -1625,6 +1641,10 @@ a:hover, a:focus {
 }
 
 .post-preview + .post-preview {
+  margin-top: 40px;
+}
+
+.post-col {
   margin-top: 40px;
 }
 

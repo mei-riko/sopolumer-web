@@ -6,13 +6,27 @@
         padding-left: 66px;
 
         border: 1px solid #c5c5c5;
+    }
+    .post-preview__img{
+        & + .post-preview__title{
+            margin-top: 20px;
+        }
+    }
+    .post-preview__title{
+        position: relative;
 
         .icon{
             width: 26px;
             height: 26px;
 
             position: absolute;
-            left: 30px;
+            top: 50%;
+            left: -36px;
+            transform: translateY(-50%);
+        }
+
+        & + .post-preview__introtext{
+            margin-top: 10px;
         }
     }
     .post-preview__link{
@@ -34,4 +48,8 @@
     & + .post-preview{
         margin-top: 40px;
     }
+}
+
+.post-col{
+    margin-top: 40px;
 }

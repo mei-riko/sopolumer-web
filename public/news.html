@@ -1,0 +1,176 @@
+
+<html lang="ru"></html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Basic Page</title>
+    <link href="./css/slick.css" rel="stylesheet"/>
+    <link href="./css/slick-theme.css" rel="stylesheet"/>
+    <link href="./css/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__row"><a class="header__logo" href="/"></a>
+            <nav class="navbar navbar_top"><a class="navbar__item" href="#">рекомендации</a><a class="navbar__item" href="#">техподдержка</a><a class="navbar__item" href="#">контакты</a><a class="navbar__item" href="#">обратная связь</a></nav>
+            <ul class="contact">
+              <li class="contact__item">Санкт-Петербург</li>
+              <li class="contact__item"><a class="contact__link" href="tel:#">8 800 800 00 00</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__row">
+            <nav class="navbar"><a class="navbar__item" href="#">О компании</a><a class="navbar__item" href="#">Каталог продукции</a><a class="navbar__item" href="#">Реализованные проекты</a><a class="navbar__item" href="#">Партнерам</a></nav>
+            <div class="search-icon" id="headerSearch"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <section class="col-8">
+              <h1 class="text-bold text-uppercase">Новости</h1>
+              <nav class="breadcrumbs mb-40">
+                <div class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></div>
+                <div class="breadcrumbs__item breadcrumbs__item_sep">/</div>
+                <div class="breadcrumbs__item">Новости</div>
+              </nav>
+              <article class="post-preview"><img class="post-preview__img img-fluid" src="/img/post-1.jpg"/>
+                <div class="row no-gutters">
+                  <div class="col-8 post-preview__content"><a class="post-preview__title h5 text-bold" href="#">Заголовок закрепленной новости
+                      <svg class="icon" viewBox="0 0 26 26" preserveAspectRatio="xMidYMid">
+                        <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z"></path>
+                      </svg></a>
+                    <div class="post-preview-info">
+                      <p class="mb-0">Большая номенклатурная товарная группа позволяет получить все материалы в одном месте</p>
+                    </div>
+                  </div><a class="col-4 post-preview__link" href="text.html">Читать дальше</a>
+                </div>
+              </article>
+              <div class="row post-row">
+                <div class="col-6 post-col">
+                  <article class="post-preview">
+                    <p class="post-preview__data text-grey">14 июля 2019</p><a class="post-preview__title text-bold">Заголовок новости без заглавной картинки</a>
+                    <p class="post-preview__introtext small">Большая номенклатурная товарная группа позволяет получить все материалы в одном месте.</p>
+                  </article>
+                </div>
+                <div class="col-6 post-col">
+                  <article class="post-preview">
+                    <p class="post-preview__data text-grey">14 июля 2019</p><img class="post-preview__img img-fluid" src="/img/post-3.png"/><a class="post-preview__title text-bold">Заголовок обычной новости</a>
+                    <p class="post-preview__introtext small">Большая номенклатурная товарная группа позволяет получить все материалы в одном месте. Большая номенклатурная товарная группа позволяет получить все материалы....</p>
+                  </article>
+                </div>
+                <div class="col-6 post-col">
+                  <article class="post-preview">
+                    <p class="post-preview__data text-grey">14 июля 2019</p><img class="post-preview__img img-fluid" src="/img/post-4.png"/><a class="post-preview__title text-bold">Заголовок обычной новости</a>
+                    <p class="post-preview__introtext small">Большая номенклатурная товарная группа позволяет получить все материалы в одном месте.</p>
+                  </article>
+                </div>
+              </div>
+            </section>
+            <aside class="col-4 sidebar">
+              <div class="sidebar__block">
+                <p class="sidebar__title">отчеты о проектах
+                  <svg class="icon" viewBox="0 0 26 26" preserveAspectRatio="xMidYMid">
+                    <path fill-rule="evenodd" stroke="rgb(23, 23, 23)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z">                           </path>
+                  </svg>
+                </p>
+                <article><a class="row news-preview" href="#">
+                    <div class="col-4"><img class="img-fluid" src="/img/news-1.png"/></div>
+                    <div class="col-8">
+                      <p class="text-bold news-preview__title">ЖК "Охтинская дуга" СК "Запстрой"</p>
+                      <p class="text-grey">
+                        Заказчик: 1234 <br/>Город: Москва <br/>
+                        Поставка: инженерные сети <br/>
+                        Дата окончания: 14 июля
+                      </p>
+                    </div></a></article>
+                <article><a class="row news-preview" href="#">
+                    <div class="col-4"><img class="img-fluid" src="/img/news-2.png"/></div>
+                    <div class="col-8">
+                      <p class="text-bold news-preview__title">Завод ИКЕА</p>
+                      <p class="text-grey">
+                        Заказчик: 1234 <br/>Город: Москва <br/>
+                        Поставка: инженерные сети <br/>
+                        Дата окончания: 14 июля
+                      </p>
+                    </div></a></article>
+                <artile><a class="row news-preview" href="#">
+                    <div class="col-4"><img class="img-fluid" src="/img/news-3.png"/></div>
+                    <div class="col-8">
+                      <p class="text-bold news-preview__title">Дилерские центры Honda и Toyota г. Брянск</p>
+                      <p class="text-grey">
+                        Заказчик: 1234 <br/>Город: Москва <br/>
+                        Поставка: инженерные сети <br/>
+                        Дата окончания: 14 июля
+                      </p>
+                    </div></a></artile>
+              </div>
+            </aside>
+          </div>
+          <ul class="pagination mt-40">
+            <li class="pagination__item"><a class="pagination__link" href="#">1</a></li>
+            <li class="pagination__item"><a class="pagination__link pagination__link--active" href="#">2</a></li>
+            <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+          </ul>
+        </div>
+      </div>
+      <aside class="content content_bg-grey">
+        <div class="container">
+          <div class="slider-brand">
+            <div class="slider-item"><img class="img-fluid" src="/img/brand-01.png"/></div>
+            <div class="slider-item"><img class="img-fluid" src="/img/brand-02.png"/></div>
+            <div class="slider-item"><img class="img-fluid" src="/img/brand-03.png"/></div>
+            <div class="slider-item"><img class="img-fluid" src="/img/brand-04.png"/></div>
+            <div class="slider-item"><img class="img-fluid" src="/img/brand-05.png"/></div>
+            <div class="slider-item"><img class="img-fluid" src="/img/brand-03.png"/></div>
+          </div>
+        </div>
+      </aside>
+      <section class="cta-block">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-6">
+              <p class="mt-40 h2 text-bold">Есть список товаров или нужна помощь профессионалов?</p>
+              <p class="mb-40">Укажите контактный телефон и менеджер компании поможет вам составить индивидуальную смету и подобрать все необходимые материалы и технику.</p>
+            </div>
+            <div class="col-5">
+              <form class="form" action="#">
+                <input class="form__input" placeholder="Ваше имя" type="text"/>
+                <input class="form__input phone" placeholder="Телефон" type="tel"/><a class="btn btn_white" href="#">Отправить</a>
+                <div class="form__agree checkbox">
+                  <input class="checkbox__input" id="agree" type="checkbox" name="agree" checked="checked" required="required"/>
+                  <label class="checkbox__label" for="agree">согласен с <a class="checkbox__link" href="/policy.pdf" target="_blank">обработкой персональных данны</a></label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row"><a class="footer__logo" href="/"></a>
+          <nav class="navbar"><a class="navbar__item" href="#">О компании</a><a class="navbar__item" href="#">Каталог</a><a class="navbar__item" href="#">Проекты</a><a class="navbar__item" href="#">Партнерам</a><a class="navbar__item" href="#">Контакты</a></nav>
+          <ul class="contact">
+            <li class="contact__item">Санкт-Петербург</li>
+            <li class="contact__item"><a class="contact__link" href="tel:#">8 800 800 00 00</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.inputmask.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/masonry.pkgd.min.js"></script>
+    <script src="./js/app.min.js"></script>
+  </body>
+</html>
