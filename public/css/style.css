@@ -991,6 +991,10 @@ a.link-inverse:hover, a.link-inverse:focus {
   margin-top: 0px;
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+
 .mt-40 {
   margin-top: 40px;
 }
@@ -1599,6 +1603,15 @@ a.link-inverse:hover, a.link-inverse:focus {
   color: #ffffff;
 }
 
+.footer .text-small, .footer .breadcrumbs {
+  font-size: 10px;
+  color: #8d8d8d;
+}
+
+.footer .footer__link {
+  color: #8d8d8d;
+}
+
 @media all and (max-width: 992px) {
   .footer .contact {
     margin-top: 10px;
@@ -1900,6 +1913,12 @@ a.link-inverse:hover, a.link-inverse:focus {
 
 .slick-slide:focus {
   outline: none;
+}
+
+@media all and (max-width: 1400px) {
+  .slider-block .slick-prev {
+    left: -90px;
+  }
 }
 
 @media all and (max-width: 768px) {

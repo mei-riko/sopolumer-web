@@ -132,7 +132,13 @@
         outline: none;
     }
 }
-
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .slider-block{
+        .slick-prev{
+            left: -90px;
+        }
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .slider-block{
         padding-left: 0;

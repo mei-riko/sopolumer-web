@@ -40,6 +40,13 @@
             }
         }
     }
+    .text-small{
+        font-size: 10px;
+        color: $grey;
+    }
+    .footer__link{
+        color: $grey;
+    }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .footer{
