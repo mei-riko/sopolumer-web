@@ -102,5 +102,8 @@
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .content{
         padding: 40px 0;
+        .content__title {
+            margin-bottom: 40px;
+        }
     }
 }
