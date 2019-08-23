@@ -2023,6 +2023,21 @@ a.link-inverse:hover, a.link-inverse:focus {
   margin-top: 40px;
 }
 
+@media all and (max-width: 768px) {
+  .post-preview .post-preview__content {
+    padding: 20px;
+    padding-left: 50px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .post-preview .post-preview__link {
+    border-left: 1px solid #c5c5c5;
+    border-top: none;
+    padding: 10px;
+  }
+}
+
 .header-block {
   background: #eaeaea;
   padding: 90px 0;
