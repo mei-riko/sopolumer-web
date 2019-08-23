@@ -2023,10 +2023,26 @@ a.link-inverse:hover, a.link-inverse:focus {
   margin-top: 40px;
 }
 
+@media all and (max-width: 992px) {
+  .post-preview .post-preview__link.col-lg-12 {
+    border-left: 1px solid #c5c5c5;
+    border-top: none;
+    padding: 20px;
+  }
+}
+
 @media all and (max-width: 768px) {
   .post-preview .post-preview__content {
     padding: 20px;
     padding-left: 50px;
+  }
+  .post-preview .post-preview__link.col-lg-12 {
+    border-left: none;
+    border-top: 1px solid #c5c5c5;
+    padding: 10px;
+  }
+  .post-col {
+    margin-top: 20px;
   }
 }
 
