@@ -3,6 +3,7 @@
     padding: 90px 0;
 
     &__title{
+        font-weight: 700;
         margin-bottom: 60px;
     }
     &__content{
@@ -42,12 +43,58 @@
         padding: 70px 0;
     }
 }
-
-@media all and (max-width: map-get($grid-breakpoints, 'md')){
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .header-block{
-        padding: 40px 0;
+        padding: 60px 0;
         .header-block__title{
             margin-bottom: 30px;
+        }
+        .header-block__img{
+            bottom: -60px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .header-block{
+        padding: 40px 0;
+        .header-block__img{
+            bottom: -40px;
+            left: 0px;
+        }
+        .header-block__content{
+            margin-bottom: 30px;
+            .btn-group{
+                .btn {
+                    & + .btn{
+                        margin-left: 0;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .header-block{
+        padding: 40px 0 0;
+        .header-block__img{
+            position: initial;
+            margin-top: 40px;
+        }
+        .header-block__content{
+            margin-bottom: 40px;
+            .btn-group{
+                .btn {
+                    & + .btn{
+                        margin-left: 20px;
+                        margin-top: 0px;
+                    }
+                }
+            }
+        }
+
+        .row{
+            flex-direction: column-reverse;
         }
         /* For error page */
         &_error{
@@ -55,6 +102,21 @@
             .header-block__title{
                 font-size: 2rem;
                 font-weight: 700;
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .header-block{
+        .header-block__content{
+            .btn-group{
+                .btn {
+                    width: 100%;
+                    & + .btn{
+                        margin-left: 0;
+                        margin-top: 20px;
+                    }
+                }
             }
         }
     }

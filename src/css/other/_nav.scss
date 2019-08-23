@@ -1,4 +1,3 @@
-.nav{}
 .navbar{
     display: flex;
     flex-wrap: nowrap;
@@ -15,5 +14,32 @@
 
     &_top{
         text-transform: uppercase;
+    }
+}
+
+.mobile-nav{
+    display: none;
+    padding: 40px;
+
+    .navbar{
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        .navbar__item{
+            & + .navbar__item{
+                margin-top: 10px;
+            }
+        }
+    }
+    .sep{
+        width: 100%;
+        height: 1px;
+        background: #eaeaea;
+        margin: 15px 0;
+    }
+    .contact{
+        .contact__link{
+            font-weight: 700;
+        }
     }
 }

@@ -117,7 +117,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     if ((0, _jquery2.default)('.slider-block .slider-block__content').length > 0) {
         (0, _jquery2.default)('.slider-block .slider-block__content').slick({
             slidesToShow: 4,
-            variableWidth: true
+            variableWidth: true,
+            responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    variableWidth: false
+                }
+            }, {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: false
+                }
+            }]
         });
     }
     // Brand Slider
@@ -184,6 +199,28 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
             }]
         });
     }
+
+    // Navbar Mobile
+    (0, _jquery2.default)(".header__nav#mobile-nav").on("click", function (e) {
+        if (!(0, _jquery2.default)(".mobile-nav").hasClass("mobile-nav--active")) {
+            (0, _jquery2.default)(".mobile-nav").addClass("mobile-nav--active");
+            (0, _jquery2.default)(".mobile-nav").slideDown();
+        } else {
+            (0, _jquery2.default)(".mobile-nav").removeClass("mobile-nav--active");
+            (0, _jquery2.default)(".mobile-nav").slideUp();
+        }
+    });
+    (0, _jquery2.default)(document).mouseup(function (e) {
+        // событие клика по веб-документу
+        var dropdownActive = (0, _jquery2.default)(".mobile-nav.mobile-nav--active"); // элемент
+
+        if (!dropdownActive.is(e.target) // клик был не по блоку
+        && dropdownActive.has(e.target).length === 0) {
+            // и не по его дочерним элементам
+            dropdownActive.removeClass("mobile-nav--active");
+            dropdownActive.slideUp();
+        }
+    });
 });
 
 /***/ }),

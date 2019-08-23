@@ -190,7 +190,10 @@ a{
     .h4,h4{font-size: 1.25rem;}
 
     .pr-md-0{padding-right: 0;}
-
+    
+    .text-md-right{text-align: right;}
+    .text-md-center{text-align: center;}
+    .text-md-left{text-align: left;}
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .pr-sm-0{padding-right: 0;}
@@ -203,4 +206,8 @@ a{
     .mb-sm-0{margin-bottom: 0px;}
     .mb-sm-40{margin-bottom: 40px;}
     .mb-sm-70{margin-bottom: 70px;}
+
+    .text-sm-right{text-align: right;}
+    .text-sm-center{text-align: center;}
+    .text-sm-left{text-align: left;}
 }

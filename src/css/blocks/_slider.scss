@@ -132,3 +132,31 @@
         outline: none;
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .slider-block{
+        padding-left: 0;
+        &__title{
+            position: initial;
+            transform: none;
+            width: 100%;
+            height: auto;
+        }
+        .slider-item{
+            height: auto;
+            .img-fluid {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .slick-prev{
+            left: -20px;
+        }
+
+        &_line-left{
+            &:after{
+                display: none;
+            }
+        }
+    }
+}

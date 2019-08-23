@@ -105,6 +105,22 @@
         padding: 40px 0;
         .content__title {
             margin-bottom: 40px;
+            &__catalog{
+                &:before{
+                    display: none;
+                }
+                &:after{
+                    display: none;
+                }
+                .icon{
+                    margin: 0;
+                }
+            }
+            &__line-right{
+                &:after{
+                    display: none;
+                }
+            }
         }
     }
     .container_navigation{

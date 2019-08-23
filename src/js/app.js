@@ -40,7 +40,25 @@ $(document).ready(() =>{
     if( $('.slider-block .slider-block__content').length > 0 ){
         $('.slider-block .slider-block__content').slick({
             slidesToShow: 4,
-            variableWidth: true
+            variableWidth: true,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        variableWidth: false,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        variableWidth: false,
+                    }
+                }
+            ]
         });
     }
     // Brand Slider
@@ -110,4 +128,24 @@ $(document).ready(() =>{
             ]
         });
     }
+
+    // Navbar Mobile
+    $(".header__nav#mobile-nav").on("click", function(e){
+        if( !$(".mobile-nav").hasClass("mobile-nav--active") ){
+            $(".mobile-nav").addClass("mobile-nav--active");
+            $(".mobile-nav").slideDown();
+        }else{
+            $(".mobile-nav").removeClass("mobile-nav--active");
+            $(".mobile-nav").slideUp();
+        }
+    });
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+		let dropdownActive = $(".mobile-nav.mobile-nav--active"); // элемент
+        
+		if (!dropdownActive.is(e.target) // клик был не по блоку
+            && dropdownActive.has(e.target).length === 0) { // и не по его дочерним элементам
+                dropdownActive.removeClass("mobile-nav--active");
+                dropdownActive.slideUp();
+        }
+    });
 });

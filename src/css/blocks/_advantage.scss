@@ -102,3 +102,33 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .advantage{
+        margin-bottom: 30px;
+        
+        .advantage__title{
+            &_line-left{
+                &:after{
+                    display: none;
+                }
+            }
+            &_line-top{
+                &:after{
+                    display: none;
+                }
+            }
+            &_line-top-vertical{
+                &:before{
+                    display: none;
+                }
+            }
+        }
+
+        &_line-bottom{
+            &:after{
+                display: none;
+            }
+        }
+    }
+}
