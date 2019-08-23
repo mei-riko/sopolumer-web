@@ -67,3 +67,11 @@
         text-decoration: underline;
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .form{
+        &__agree{
+            font-size: 10px;
+        }
+    }
+}

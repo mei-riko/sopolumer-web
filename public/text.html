@@ -15,28 +15,47 @@
       <div class="header__top">
         <div class="container">
           <div class="header__row"><a class="header__logo" href="/"></a>
-            <nav class="navbar navbar_top"><a class="navbar__item" href="#">рекомендации</a><a class="navbar__item" href="#">техподдержка</a><a class="navbar__item" href="#">контакты</a><a class="navbar__item" href="#">обратная связь</a></nav>
-            <ul class="contact">
-              <li class="contact__item">Санкт-Петербург</li>
+            <svg class="header__nav" id="mobile-nav" viewBox="0 0 124 124" preserveAspectRatio="xMidYMid meet">
+              <g>
+                <path fill="rgb(34, 23, 42)" d="M112,6H12C5.4,6,0,11.4,0,18s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,6,112,6z"></path>
+                <path fill="rgb(34, 23, 42)" d="M112,50H12C5.4,50,0,55.4,0,62c0,6.6,5.4,12,12,12h100c6.6,0,12-5.4,12-12C124,55.4,118.6,50,112,50z"></path>
+                <path fill="rgb(34, 23, 42)" d="M112,94H12c-6.6,0-12,5.4-12,12s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,94,112,94z"></path>
+              </g>
+            </svg><a class="phone-icon" href="#">               </a>
+            <nav class="navbar navbar_top d-md-none"><a class="navbar__item" href="#">рекомендации</a><a class="navbar__item" href="#">техподдержка</a><a class="navbar__item" href="#">контакты</a><a class="navbar__item" href="#">обратная связь</a></nav>
+            <ul class="contact d-lg-none">
+              <li class="contact__item d-xl-none">Санкт-Петербург</li>
               <li class="contact__item"><a class="contact__link" href="tel:#">8 800 800 00 00</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="header__bottom">
+      <div class="header__bottom d-md-none">
         <div class="container">
           <div class="header__row">
             <nav class="navbar"><a class="navbar__item" href="#">О компании</a><a class="navbar__item" href="#">Каталог продукции</a><a class="navbar__item" href="#">Реализованные проекты</a><a class="navbar__item" href="#">Партнерам</a></nav>
-            <div class="search-icon" id="headerSearch"></div>
+            <div class="icon-block">
+              <div class="search-icon" id="headerSearch"></div><a class="phone-icon" href="#"></a>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="mobile-nav" style="display:none">
+        <nav class="navbar navbar_mobile"><a class="navbar__item" href="#">О компании</a><a class="navbar__item" href="#">Каталог продукции</a><a class="navbar__item" href="#">Реализованные проекты</a><a class="navbar__item" href="#">Партнерам</a>
+          <div class="sep"></div><a class="navbar__item" href="#">рекомендации</a><a class="navbar__item" href="#">техподдержка</a><a class="navbar__item" href="#">контакты</a><a class="navbar__item" href="#">обратная связь</a>
+          <div class="sep"></div>
+        </nav>
+        <ul class="contact">
+          <li class="contact__item">Санкт-Петербург</li>
+          <li class="contact__item"><a class="contact__link" href="tel:#">8 800 800 00 00</a></li>
+        </ul>
       </div>
     </header>
     <main>
       <div class="content">
         <div class="container">
           <div class="row">
-            <section class="col-8 post">
+            <section class="col-8 col-md-12 col-lg-7 post">
               <h1 class="text-uppercase">Простая текстовая страница</h1>
               <nav class="breadcrumbs mb-40">
                 <div class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></div>
@@ -62,7 +81,7 @@
                 <li>Auctor augue mauris augue neque gravida</li>
               </ul>
             </section>
-            <aside class="col-4 sidebar">
+            <aside class="col-4 col-md-12 col-lg-5 mt-md-40 sidebar">
               <div class="sidebar__block sidebar__block_border pb-40">
                 <p class="sidebar__title">Каталог продукции
                   <svg class="icon" viewBox="0 0 26 26" preserveAspectRatio="xMidYMid">
@@ -105,36 +124,36 @@
                     <path fill-rule="evenodd" stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z">                           </path>
                   </svg>
                 </p>
-                <article><a class="row news-preview" href="#">
-                    <div class="col-4"><img class="img-fluid" src="/img/news-1.png"/></div>
+                <article class="mb-40"><a class="row news-preview" href="#">
+                    <div class="col-4 pr-lg-0"><img class="img-fluid" src="/img/news-1.png"/></div>
                     <div class="col-8">
                       <p class="text-bold news-preview__title">ЖК "Охтинская дуга" СК "Запстрой"</p>
-                      <p class="text-grey">
+                      <p class="text-grey mb-0">
                         Заказчик: 1234 <br/>Город: Москва <br/>
                         Поставка: инженерные сети <br/>
                         Дата окончания: 14 июля
                       </p>
                     </div></a></article>
-                <article><a class="row news-preview" href="#">
-                    <div class="col-4"><img class="img-fluid" src="/img/news-2.png"/></div>
+                <article class="mb-40"><a class="row news-preview" href="#">
+                    <div class="col-4 pr-lg-0"><img class="img-fluid" src="/img/news-2.png"/></div>
                     <div class="col-8">
                       <p class="text-bold news-preview__title">Завод ИКЕА</p>
-                      <p class="text-grey">
+                      <p class="text-grey mb-0">
                         Заказчик: 1234 <br/>Город: Москва <br/>
                         Поставка: инженерные сети <br/>
                         Дата окончания: 14 июля
                       </p>
                     </div></a></article>
-                <artile><a class="row news-preview" href="#">
-                    <div class="col-4"><img class="img-fluid" src="/img/news-3.png"/></div>
+                <article class="mb-0"><a class="row news-preview" href="#">
+                    <div class="col-4 pr-lg-0"><img class="img-fluid" src="/img/news-3.png"/></div>
                     <div class="col-8">
                       <p class="text-bold news-preview__title">Дилерские центры Honda и Toyota г. Брянск</p>
-                      <p class="text-grey">
+                      <p class="text-grey mb-0">
                         Заказчик: 1234 <br/>Город: Москва <br/>
                         Поставка: инженерные сети <br/>
                         Дата окончания: 14 июля
                       </p>
-                    </div></a></artile>
+                    </div></a></article>
               </div>
             </aside>
           </div>
@@ -156,11 +175,11 @@
       <aside class="cta-block">
         <div class="container">
           <div class="row justify-content-between align-items-center">
-            <div class="col-6">
+            <div class="col-6 col-md-12 col-lg-6">
               <p class="mt-40 h2 text-bold">Есть список товаров или нужна помощь профессионалов?</p>
               <p class="mb-40">Укажите контактный телефон и менеджер компании поможет вам составить индивидуальную смету и подобрать все необходимые материалы и технику.</p>
             </div>
-            <div class="col-5">
+            <div class="col-5 col-md-12 col-lg-6">
               <form class="form" action="#">
                 <input class="form__input" placeholder="Ваше имя" type="text"/>
                 <input class="form__input phone" placeholder="Телефон" type="tel"/><a class="btn btn_white" href="#">Отправить</a>

@@ -25,7 +25,6 @@
         text-transform: uppercase;
         text-align: center;
     }
-
     &__content{
         padding: 40px;
 
@@ -55,7 +54,24 @@
             }
         }
     }
+
+    &_line-left{
+        position: relative;
+        &:after{
+            content:'';
+            display: block;
+
+            position: absolute;
+            top: -40px;
+            left: -40px;
+            width: 1px;
+            height: calc(50% + 40px);
+
+            background: $red;
+        }
+    }
 }
+
 .slider-brand{
     padding: 0 70px;
     .slider-item{

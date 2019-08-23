@@ -3,16 +3,22 @@ header.header
         .container
             .header__row
                 a.header__logo(href="/")
-                nav.navbar.navbar_top
+                svg.header__nav#mobile-nav(viewBox="0 0 124 124" preserveAspectRatio="xMidYMid meet")
+                    g
+                        path(fill="rgb(34, 23, 42)" d="M112,6H12C5.4,6,0,11.4,0,18s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,6,112,6z")
+                        path(fill="rgb(34, 23, 42)" d="M112,50H12C5.4,50,0,55.4,0,62c0,6.6,5.4,12,12,12h100c6.6,0,12-5.4,12-12C124,55.4,118.6,50,112,50z")
+                        path(fill="rgb(34, 23, 42)" d="M112,94H12c-6.6,0-12,5.4-12,12s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,94,112,94z")
+                a.phone-icon(href="#")                
+                nav.navbar.navbar_top.d-md-none
                     a.navbar__item(href="#") рекомендации
                     a.navbar__item(href="#") техподдержка
                     a.navbar__item(href="#") контакты
                     a.navbar__item(href="#") обратная связь
-                ul.contact
-                    li.contact__item Санкт-Петербург
+                ul.contact.d-lg-none
+                    li.contact__item.d-xl-none Санкт-Петербург
                     li.contact__item
                         a.contact__link(href="tel:#") 8 800 800 00 00
-    .header__bottom
+    .header__bottom.d-md-none
         .container
             .header__row
                 nav.navbar
@@ -20,4 +26,23 @@ header.header
                     a.navbar__item(href="#") Каталог продукции
                     a.navbar__item(href="#") Реализованные проекты
                     a.navbar__item(href="#") Партнерам
-                .search-icon#headerSearch
+                .icon-block
+                    .search-icon#headerSearch
+                    a.phone-icon(href="#")
+    .mobile-nav(style="display:none")
+        nav.navbar.navbar_mobile
+            a.navbar__item(href="#") О компании
+            a.navbar__item(href="#") Каталог продукции
+            a.navbar__item(href="#") Реализованные проекты
+            a.navbar__item(href="#") Партнерам
+            .sep
+            a.navbar__item(href="#") рекомендации
+            a.navbar__item(href="#") техподдержка
+            a.navbar__item(href="#") контакты
+            a.navbar__item(href="#") обратная связь
+            .sep
+        ul.contact
+            li.contact__item Санкт-Петербург
+            li.contact__item
+                a.contact__link(href="tel:#") 8 800 800 00 00
+

@@ -42,3 +42,20 @@
         padding: 70px 0;
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .header-block{
+        padding: 40px 0;
+        .header-block__title{
+            margin-bottom: 30px;
+        }
+        /* For error page */
+        &_error{
+            padding: 60px 0;
+            .header-block__title{
+                font-size: 2rem;
+                font-weight: 700;
+            }
+        }
+    }
+}

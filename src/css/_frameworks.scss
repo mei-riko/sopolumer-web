@@ -49,6 +49,13 @@ a{
     &:hover, &:focus{
         outline: none;
     }
+
+    &.link-inverse{
+        color: $link-hover-color;
+        &:hover, &:focus{
+            color: $dark-red;
+        }
+    }
 }
 
 .p-relative{position: relative;}
@@ -145,7 +152,28 @@ a{
 .pb-40{padding-bottom: 40px;}
 .pb-70{padding-bottom: 70px;}
 
-@media all and (max-width: map-get($grid-breakpoints, 'xl')){}
-@media all and (max-width: map-get($grid-breakpoints, 'lg')){}
-@media all and (max-width: map-get($grid-breakpoints, 'md')){}
-@media all and (max-width: map-get($grid-breakpoints, 'sm')){}
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .d-xl-none{display: none!important;}
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .d-lg-none{display: none!important;}
+    .pr-lg-0{padding-right: 0;}
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .d-md-none{display: none!important;}
+
+    .mt-md-0{margin-top: 0px;}
+    .mt-md-40{margin-top: 40px;}
+    .mt-md-70{margin-top: 70px;}
+    .mb-md-0{margin-bottom: 0px;}
+    .mb-md-40{margin-bottom: 40px;}
+    .mb-md-70{margin-bottom: 70px;}
+
+    .h1,h1{font-size: 1.75rem;}
+    .h2,h2{font-size: 1.5rem;}
+    .h3,h3{font-size: 1.5rem;}
+    .h4,h4{font-size: 1.25rem;}
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .pr-sm-0{padding-right: 0;}
+}

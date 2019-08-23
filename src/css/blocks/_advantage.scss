@@ -14,10 +14,91 @@
 
         &_double{
             padding-left: 56px;
+            &.advantage__title_line-top{
+                &:after{
+                    bottom: 32px;
+                    left: 21px;
+                    width: 1px;
+                    height: 24px;                
+                }
+            }
+            &.advantage__title_line-top-vertical{
+                &:before{
+                    bottom: 56px;
+                    left: 21px;
+                    width: 100%;
+                }
+            }
+        }
+
+        &_line-left{
+            position: relative;
+            &:after{
+                content:'';
+                display: block;
+
+                position: absolute;
+                top: calc(50% - 1px);
+                left: -40px;
+
+                width: 40px;
+                height: 1px;
+
+                background: $red;
+            }
+        }
+        &_line-top{
+            position: relative;
+            &:after{
+                content:'';
+                display: block;
+
+                position: absolute;
+                bottom: 22px;
+                left: 11px;
+
+                width: 1px;
+                height: 35px;
+
+                background: $red;
+            }
+        }
+        &_line-top-vertical{
+            position: relative;
+            &:before{
+                content:'';
+                display: block;
+
+                position: absolute;
+                bottom: 56px;
+                left: -100px;
+
+                width: 200px;
+                height: 1px;
+
+                background: $red;
+            }
         }
     }
     .advantage__content{
         font-size: 14px;
         margin-bottom: 0;
+    }
+
+    &_line-bottom{
+        position: relative;
+        &:after{
+            content:'';
+            display: block;
+
+            position: absolute;
+            top: 10px;
+            left: -40px;
+
+            width: 1px;
+            height: calc(100% + 60px);
+
+            background: $red;
+        }
     }
 }

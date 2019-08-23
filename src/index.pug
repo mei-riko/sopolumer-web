@@ -33,30 +33,31 @@ html(lang="ru")
                             p.text-small.text-grey.header-block__info * менеджер компании поможет вам составить индивидуальную смету
             section.content.pb-10
                 .container
-                    h2.content__title Почему с нами сотрудничают крупнейшие компании?
+                    h2.content__title
+                        span.content__title__line-right Почему с нами сотрудничают крупнейшие компании?
                     .row
                         .col-4
-                            .advantage
-                                p.advantage__title Полная комплектация 
+                            .advantage.advantage_line-bottom
+                                p.advantage__title.advantage__title_line-left Полная комплектация 
                                     svg.icon(width="26px" height="26px")
                                         path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z")
                                 p.advantage__content Большая номенклатурная товарная группа позволяет получить все материалы в одном месте
                         .col-4
                             .advantage
-                                p.advantage__title.advantage__title_double Цены от производителя
+                                p.advantage__title.advantage__title_double.advantage__title_line-top.advantage__title_line-top-vertical Цены от производителя
                                     svg.icon(width="46px" height="46px")
                                         path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,2.000 C33.046,2.000 42.000,10.954 42.000,22.000 C42.000,33.046 33.046,42.000 22.000,42.000 C10.954,42.000 2.000,33.046 2.000,22.000 C2.000,10.954 10.954,2.000 22.000,2.000 Z")
                                         path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M22.000,12.000 C27.523,12.000 32.000,16.477 32.000,22.000 C32.000,27.523 27.523,32.000 22.000,32.000 C16.477,32.000 12.000,27.523 12.000,22.000 C12.000,16.477 16.477,12.000 22.000,12.000 Z")
                                 p.advantage__content Прямое сотрудничество производителями позволяет предлагать выгодные ценовые условия 
                         .col-4
                             .advantage
-                                p.advantage__title Собственная доставка
+                                p.advantage__title.advantage__title_line-top.advantage__title_line-top-vertical Собственная доставка
                                     svg.icon(width="26px" height="26px")
                                         path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z")
                                 p.advantage__content Возможность доставки товара собственным транспортом, сокращает время на логистику
                         .col-4
-                            .advantage
-                                p.advantage__title Инженеры в штате
+                            .advantage.advantage_line-bottom
+                                p.advantage__title.advantage__title_line-left Инженеры в штате
                                     svg.icon(width="26px" height="26px")
                                         path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z")
                                 p.advantage__content Наши технические специалисты помогут в проектировании или подборе оборудования
@@ -74,7 +75,7 @@ html(lang="ru")
                                 p.advantage__content После оплаты по счету большую часть товара возможно отгрузить на следующий день
             section
                 .container
-                    .slider-block
+                    .slider-block.slider-block_line-left
                         .slider-block__title рекомендации и партнерство
                         .slider-block__content
                             .slider-item
@@ -91,7 +92,10 @@ html(lang="ru")
                                 img.img-fluid(src="/img/test-02.png")
             section.content.pb-0
                 .container
-                    p.h2.content__title.text-bold Каталог продукции
+                    p.h2.content__title.text-bold 
+                        span.content__title__catalog Каталог продукции
+                            svg.icon(viewbox="0 0 26 26" preserveAspectRatio="MidXMidY meet")
+                                path(fill-rule="evenodd"  stroke="rgb(255, 11, 0)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M12.000,2.000 C17.523,2.000 22.000,6.477 22.000,12.000 C22.000,17.523 17.523,22.000 12.000,22.000 C6.477,22.000 2.000,17.523 2.000,12.000 C2.000,6.477 6.477,2.000 12.000,2.000 Z")
                     .row.no-gutters.catalog
                         a.col-3.catalog__col.catalog__col_first.catalog__col_link(href="/catalog.html")
                             .catalog__title Трубы и&nbsp;фитинги
@@ -186,7 +190,7 @@ html(lang="ru")
                                     p Телефон
                                 .col-8
                                     p 
-                                        a(href="tel:+7 (812) 313-76-09") +7 (812) 313-76-09
+                                        a.link-inverse.text-bold(href="tel:+7 (812) 313-76-09") +7 (812) 313-76-09
                                 .col-4 
                                     p Адрес
                                 .col-8
@@ -195,7 +199,7 @@ html(lang="ru")
                                     p E-mail
                                 .col-8
                                     p 
-                                        a(href="mailto:#") info@sopolymer.ru
+                                        a.link-inverse.text-bold(href="mailto:#") info@sopolymer.ru
                                 .col-4 
                                     p ИНН
                                 .col-8

@@ -24,3 +24,19 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .cta-block{
+        .form{
+            padding: 40px 30px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .cta-block{
+        .form{
+            padding: 0 0 40px;
+            background: initial;
+        }
+    }
+}

@@ -41,3 +41,35 @@
         }
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .footer{
+        .contact{
+            margin-top: 10px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .footer{
+        .navbar{
+            flex-wrap: wrap;
+            margin-left: -10px;
+            margin-right: -10px;
+            .navbar__item{
+                padding: 10px;
+            }
+        }
+        .contact{
+            margin-top: 30px;
+            .contact__item{
+                white-space: nowrap;
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .footer{
+        .contact{
+            flex-wrap: wrap;
+        }
+    }
+}
