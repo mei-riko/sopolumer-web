@@ -88,6 +88,7 @@
         text-transform: uppercase;
         padding: 1.5em .5em;
         color: $grey;
+        white-space: nowrap;
 
         &--active{
             color: $red;
@@ -105,5 +106,8 @@
         .content__title {
             margin-bottom: 40px;
         }
+    }
+    .container_navigation{
+        padding: 0 10px;
     }
 }

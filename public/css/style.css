@@ -2208,6 +2208,7 @@ a.link-inverse:hover, a.link-inverse:focus {
   text-transform: uppercase;
   padding: 1.5em .5em;
   color: #8d8d8d;
+  white-space: nowrap;
 }
 
 .content-navigation__item--active {
@@ -2224,6 +2225,9 @@ a.link-inverse:hover, a.link-inverse:focus {
   }
   .content .content__title {
     margin-bottom: 40px;
+  }
+  .container_navigation {
+    padding: 0 10px;
   }
 }
 
