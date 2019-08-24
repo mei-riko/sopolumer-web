@@ -1027,6 +1027,20 @@ a.link-inverse:hover, a.link-inverse:focus {
   padding-bottom: 70px;
 }
 
+.jGrowl#jGrowl {
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translateX(50%) translateY(50%);
+  -ms-transform: translateX(50%) translateY(50%);
+  transform: translateX(50%) translateY(50%);
+  font-size: 14px;
+}
+
+.jGrowl#jGrowl .jGrowl-notification {
+  width: 300px;
+  padding: 20px;
+}
+
 @media all and (max-width: 1400px) {
   .d-xl-none {
     display: none !important;
@@ -2070,6 +2084,10 @@ a.link-inverse:hover, a.link-inverse:focus {
   color: #ffffff;
 }
 
+.cta-block .form .ajax_form .error {
+  color: #fafafa;
+}
+
 @media all and (max-width: 992px) {
   .cta-block .form {
     padding: 40px 30px;
@@ -2394,9 +2412,9 @@ a.link-inverse:hover, a.link-inverse:focus {
   display: flex;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   overflow: auto;
 }
 
@@ -2404,7 +2422,7 @@ a.link-inverse:hover, a.link-inverse:focus {
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 1.5em .5em;
+  padding: 1.5em 1.5em;
   color: #8d8d8d;
   white-space: nowrap;
 }

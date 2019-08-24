@@ -80,13 +80,13 @@
 .content-navigation{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
     overflow: auto;
     &__item{
         font-size: 10px;
         font-weight: 700;
         text-transform: uppercase;
-        padding: 1.5em .5em;
+        padding: 1.5em 1.5em;
         color: $grey;
         white-space: nowrap;
 
